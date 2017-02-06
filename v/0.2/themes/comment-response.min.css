@@ -548,7 +548,7 @@ clear:both
 }
 p
 {
-margin:0 0 10px
+margin:0 0 20px 10px
 }
 .lead
 {
@@ -687,12 +687,18 @@ border-bottom:1px solid #fff
 }
 blockquote
 {
-margin:0 0 0 0px;
-padding:0 0 0 5px;
+margin:0 0 5px 5px;
 font-size:16px;
 font-weight:300;
 background-color: #faebbc;
 line-height:25px;
-border-top: 6px solid #e1cc89;
-border-bottom: 3px solid #e1cc89
+border-top: 3px solid #e1cc89;
+border-bottom: 1px solid #e1cc89;
+}
+blockquote p
+{
+margin: 5px 5px 10px 10px;
+}
+@media print {
+    blockquote {page-break-inside: avoid;}
 }
